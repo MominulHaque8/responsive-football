@@ -55,7 +55,7 @@ font-size: 1.2em;
 main{
     background-color: whitesmoke;
     padding-top: 70px;
-    padding-left: 320px;
+    /* padding-left: 320px; */
 }
 
 .blog{
@@ -68,6 +68,7 @@ grid-row-gap: 30px;
   width: 430px;
   height: 650px;
   background-color: white;
+  padding-left: 320px;
 }
 
 .player img{
