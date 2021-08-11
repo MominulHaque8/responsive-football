@@ -12,7 +12,8 @@ font-family: 'Roboto Slab', serif;
 
 .banner{
 display: grid;
-grid-template-columns: 800px auto;
+grid-template-columns: 600px auto;
+justify-content: space-between;
 height: 520px;
 background-color:darkblue;
 border: 1px solid;
@@ -140,7 +141,7 @@ font-size: 20px;
 }
 
 /*--------------------
-      Media Queries 
+   Media Queries 
   --------------------*/
 
   /* Mobile Devices */
