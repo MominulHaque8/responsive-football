@@ -12,8 +12,7 @@ font-family: 'Roboto Slab', serif;
 
 .banner{
 display: grid;
-grid-template-columns: 1000px auto;
-width: 100%;
+grid-template-columns: 800px auto;
 height: 520px;
 background-color:darkblue;
 border: 1px solid;
@@ -26,7 +25,7 @@ margin-top: 120px;
 margin-left: 150px;
 }
 
-.player{
+.banner-img{
 width: 556px;
 height: 438px;
 margin-top: 50px;
@@ -50,54 +49,60 @@ width: 160px;
 line-height: 10px;
 font-size: 1.2em;
 }
-  /* blog styles  */
+ 
+/* blog styles  */
 
-main{
-    background-color: whitesmoke;
-    padding-top: 70px;
-    /* padding-left: 320px; */
+main{ 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   background-color: whitesmoke;
+   padding-top: 70px;
 }
 
 .blog{
 display: grid;
-grid-template-columns: 460px 460px auto;
+grid-template-columns: 360px 360px auto;
+grid-column-gap: 5px;
 grid-row-gap: 30px;
 }
 
 .player-blog{
-  width: 430px;
-  height: 650px;
+  width: 330px;
+  height: 560px;
   background-color: white;
-  padding-left: 320px;
 }
 
 .player img{
-width: 400px;
-height: 350px;
-margin-top: -33px;
+width: 300px;
+height: 250px;
+margin-top: 15px;
 margin-left: 15px;
 }
 
 .blog-info{
-width: 350px;
 margin-left: 24px;
 }
 
 h2{
-font-size: 2em;
-
+font-size: 1.8em;
+margin-left: -6px;
 }
+
 p{ 
+font-size: 1.1em;
 margin-top: -5px;
-color: grey
+margin-left: -6px;
+color: grey;
 }
 
-/* logo & icon styles  */
+/* logo & icon styles   */
 
 .logo{
 width: 100%;
 text-align: center;
-margin-top: 150px;
+margin-top: 100px;
 }
 
 .icon{  
@@ -128,6 +133,50 @@ text-align: center;
 margin-top: 30px;
 font-size: 20px;
 }
-.Copyright{
-color: black;
+.Copyright{ 
+  width: 110%;
+  text-align: center;
+  color: black;
 }
+
+/*--------------------
+      Media Queries 
+  --------------------*/
+
+  /* Mobile Devices */
+  
+  @media only screen and (max-width:688px) {
+   
+    main, .banner{
+        width: 100%;
+    }
+    .banner{
+      grid-template-columns: 100px;
+      height: 800px;
+    }
+    
+    h1{
+      margin-left: 15px;
+      font-size: 3em;
+    }
+    .banner-img{
+      width: 330px;
+      height: 280px;
+      margin-left: 20px;
+      }
+    
+    .watch-live{
+        margin-top: -390px;
+        margin-left: 20px;
+      }
+
+    .blog{
+        grid-template-columns: 360px;
+        margin-left: 30px;
+       }
+   
+    .player-blog, .player  {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
