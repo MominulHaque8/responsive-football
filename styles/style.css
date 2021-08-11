@@ -12,8 +12,7 @@ font-family: 'Roboto Slab', serif;
 
 .banner{
 display: grid;
-grid-template-columns: 600px auto;
-justify-content: space-between;
+grid-template-columns: 900px auto;
 height: 520px;
 background-color:darkblue;
 border: 1px solid;
